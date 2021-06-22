@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block body %}
+    
+    <div id="mainmenu-view">
+        <h1 class="title">GPU Overheating Simulator</h1>
+        <div class="menubuttons">
+            <button type="button" class="button" id="play"><span>Play</span></button> <br>
+            <button type="button" class="button" id="customization"><span>Customization</span></button> <br>
+            <button type="button" class="button" id="statistics"><span>Statistics</span></button> <br>
+            <button type="button" class="button" id="settings"><span>Settings</span></button>
+        </div>
+        <div class="notlogged">
+            <a href="{% url 'login' %}" type="button" class="accbuttons" id="login">Logout</a>
+        </div>
+    </div>
+
+    <div id="returntomenu">
+        <button type="button" class="returnbutton">Main Menu</button>
+    </div>
+
+    <div id="game-view">
+        <div class="infopanel" id="infopanel">
+            
+        </div>
+        <button type="button" class="money_button" id="money_button">Sell a glass of lemonade for $1 profit</button>
+        <div class="upgrades">
+            <button type="button" class="gpu_button" id="basic_gpu">Buy basic GPU<br>$100</button> <br>
+            <button type="button" class="gpu_button" id="advanced_gpu">Buy advanced GPU<br>$500</button> <br>
+            <button type="button" class="gpu_button" id="ultimate_gpu">Buy ultimate GPU<br>$1500</button>    
+        </div>
+        <button type="button" class="save_button" id="save_button">Save Progress</button>
+        <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118" alt="bitconnect" class=bit1>
+        <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118" alt="bitconnect" class=bit2>
+        <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118" alt="bitconnect" class=bit3>
+        <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118" alt="bitconnect" class=bit4>
+        <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118" alt="bitconnect" class=bit5>
+        <img src="https://www.cnet.com/a/img/naqtECxGKnGGw7_LPThxRoSbjco=/940x0/2013/12/27/2905f9b4-8533-11e3-bc97-14feb5ca9861/dogecoin.jpg" alt="dogecoin" class=doge1>
+        <img src="https://www.cnet.com/a/img/naqtECxGKnGGw7_LPThxRoSbjco=/940x0/2013/12/27/2905f9b4-8533-11e3-bc97-14feb5ca9861/dogecoin.jpg" alt="dogecoin" class=doge2>
+        
+    </div>
+
+    <div class="statistics-view" id="statistics-view">
+        <h1>Detailed Statistics</h1> <br>
+        <div class="statpage" id="statpage">
+
+
+        </div>
+        <img src="https://compote.slate.com/images/926e5009-c10a-48fe-b90e-fa0760f82fcd.png?width=1200&rect=680x453&offset=0x30" alt="Stonks">
+    </div>
+
+    <div id="settings-view">
+        <h1>Custom settings feature is work in progress</h1>
+    </div>
+
+    <div id="customization-view">
+        <h1>customization feature is work in progress</h1>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'core.js' %}"></script>
+{% endblock %}
