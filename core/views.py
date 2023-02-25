@@ -91,7 +91,7 @@ def register(request):
         confirmation = request.POST["confirmation"]
         if password != confirmation:
             return render(request, "coreregister.html", {
-                "message": "Passwords must match."
+                "message": "Passwords must match!"
             })
 
         # Attempt to create new user

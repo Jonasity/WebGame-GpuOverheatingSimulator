@@ -75,7 +75,11 @@ function cycle(starter) {
         window.balance = window.balance + 1;
         window.lifeearning = window.lifeearning + 1;
         window.buttonclicks = window.buttonclicks + 1;
-        infopanel.innerHTML = `Balance: $${window.balance} <br> $ earnt per second: $${window.earning}`;
+        window.bitcoinearn = window.earning * 0.000032;
+        window.bitcoin = window.balance * 0.000032;
+        window.bitcoinearn = window.bitcoinearn.toFixed(6)
+        window.bitcoin = window.bitcoin.toFixed(6)
+        infopanel.innerHTML = `Balance: $${window.balance} &nbsp;&nbsp;&nbsp;&nbsp; BTC Equivalent: ${window.bitcoin}<br> $ earnt per second: $${window.earning} &nbsp;&nbsp;&nbsp;&nbsp; BTC Equivalent: ${window.bitcoinearn}`;
     } else if (starter == "basic") {
         if (window.balance >= 100) {
             window.basic_amount = window.basic_amount + 1;
