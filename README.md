@@ -17,3 +17,4 @@ This is the place where the user will spend most of the time. Present we have pu
 ![Screenshot 2023-03-08 181144](https://user-images.githubusercontent.com/56690175/223768708-58eb086e-b208-4c52-8d10-5461a7da7090.png)
 
 Lastly we move to the statistics screen where we can see more detailed statistics that are also saved. Movement between all these panels in the game interface does not refresh the page at all, and the money counter keeps ticking even when not on the play page. Everything is continuosly run as long as the website is running. 
+![Screenshot 2023-03-08 181228](https://user-images.githubusercontent.com/56690175/223770252-6eabd500-1265-47a6-bbcc-b0f07dfc4ccf.png)
